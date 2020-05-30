@@ -1,7 +1,9 @@
-Souce data for,
+Souce data for regression analysis (individual data points)
+nonsense_frequency_raw.txt
+nonsense_frequency_ratio_raw.txt
+nonsense_frequency_oneoffs_raw.txt
 
+Souce data for visualization (sliding window analysis)
 Figure 4A:  nonsense_frequency.txt
-
 Figure 4—figure supplement 1: nonsense_frequency_ratio.txt
-
 Figure 4—figure supplement 2: nonsense_frequency_oneoffs.txt
