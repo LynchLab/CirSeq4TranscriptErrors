@@ -1,10 +1,7 @@
-#1.For Fig.4
-python get_distance_1.py PTC_ann errors_coverages  cds.gff 100 > distance_frequency_1
+Souce data for,
 
-#2.For Fig.S2
-python get_distance_2.py PTC_ann all_errors_ann errors_coverages cds.gff   100 > distance_frequency_2
+Figure 4A:  nonsense_frequency.txt
 
-#3.For Fig.S3
-python get_distance_3.py PTC_ann errors_coverages cds.gff cds.fa  100 > distance_frequency_3
+Figure 4—figure supplement 1: nonsense_frequency_ratio.txt
 
-#errors_coverages are based on the first 5 columns of list_of_errors, loci in each biological replicate are unique.
+Figure 4—figure supplement 2: nonsense_frequency_oneoffs.txt
