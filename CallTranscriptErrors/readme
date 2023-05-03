@@ -51,4 +51,5 @@ samtools mpileup -d 1000000 -s -f ref_cds.fa aln.sort.bam > pileup
 #14.Call errors and calculate the total number of coverages
 python pileup_analysis.py  pileup 0.01 > list_of_errors
 python get_total_coverage.py pileup 0.01 > total_coverages
+python3 pileup_analysis_updated.py pileup 0.5 50  #Updated python3 script to call transcript errors.
 
