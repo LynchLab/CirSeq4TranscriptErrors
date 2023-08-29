@@ -6,10 +6,13 @@ sink("glm_out.txt", append = FALSE)
 for (x in files) {
         data<-read.table(x,header=TRUE)
         data$CovlogFPKM<-data$Cov*log(data$FPKM)
-        starting_vals = c(10^-6, 10^-7)
         print(x)
+        starting_vals = c(10^-7)
+        model_noslope_glm<-glm(Num_errors ~ Cov +0,start = starting_vals, family = poisson(link = identity), data)
+        starting_vals = c(10^-6, 10^-7)
         model_glm<-glm(Num_errors ~ Cov + CovlogFPKM +0,start = starting_vals, family = poisson(link = identity), data)
         print(summary(model_glm))
+        print(anova(model_noslope_glm, model_glm, test = "Chisq"))
 }
 
 sink()
